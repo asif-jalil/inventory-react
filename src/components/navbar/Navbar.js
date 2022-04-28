@@ -38,7 +38,7 @@ const Navbar = () => {
             </Menu.Items>
           </Transition>
         </Menu>
-        <div className="w-96 ml-32 relative sm:hidden md:block">
+        <div className="w-96 ml-32 relative hidden md:block">
           <img src={search} alt="search" className="absolute top-3 left-3.5" />
           <input
             type="text"

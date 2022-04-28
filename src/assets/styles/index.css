@@ -1,4 +1,9 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
-@import '@material-tailwind/react/tailwind.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .form-check {
+    @apply checked:bg-check appearance-none h-4 w-4 border-2 border-neutral-300 rounded bg-transparent checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 align-top bg-no-repeat bg-center bg-contain cursor-pointer;
+  }
+}
