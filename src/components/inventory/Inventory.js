@@ -72,10 +72,10 @@ const Inventory = () => {
                       <input type="checkbox" name="" className="form-check" id="" />
                     </div>
                   </td>
-                  <td className="text-sm py-4 px-2 hidden md:table-cell">{row.date}</td>
-                  <td className="text-sm py-4 pl-4 pr-2 md:px-2">{row.title}</td>
-                  <td className="text-sm py-4 px-2 hidden lg:table-cell">{row.details}</td>
-                  <td className="text-sm py-4 px-2 text-left">
+                  <td className="text-sm py-4 px-2 hidden md:table-cell align-top">{row.date}</td>
+                  <td className="text-sm py-4 pl-4 pr-2 md:px-2 align-top">{row.title}</td>
+                  <td className="text-sm py-4 px-2 hidden lg:table-cell align-top">{row.details}</td>
+                  <td className="text-sm py-4 px-2 text-left align-top">
                     <span className="hidden md:inline">{row.status}</span>
                     <span
                       className={classNames("inline-block w-2 h-2 rounded-full bg-success ml-2", {
@@ -85,9 +85,9 @@ const Inventory = () => {
                       })}
                     ></span>
                   </td>
-                  <td className="text-sm py-4 px-2 text-right">{row.quantity}</td>
-                  <td className="text-sm py-4 px-2 text-right hidden lg:table-cell">{row.unitPrice}</td>
-                  <td className="text-sm py-4 px-2 text-right">{row.amount}</td>
+                  <td className="text-sm py-4 px-2 text-right align-top">{row.quantity}</td>
+                  <td className="text-sm py-4 px-2 text-right hidden lg:table-cell align-top">{row.unitPrice}</td>
+                  <td className="text-sm py-4 px-2 text-right align-top">{row.amount}</td>
                 </tr>
               ))}
             </tbody>
