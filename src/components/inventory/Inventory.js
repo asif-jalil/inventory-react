@@ -94,13 +94,38 @@ const Inventory = () => {
           </table>
 
           <div className="pt-6 pb-10 px-4 flex justify-between">
-            <div className="w-[200px]">
-              <select className="bg-select bg-white appearance-none border border-neutral-500 text-sm text-neutral-800 p-2 rounded shadow w-full block bg-clip-padding bg-no-repeat bg-right">
-                <option value="10">10 Items per page</option>
+            <div className="w-[200px] hidden md:block">
+              <select className="form-select">
+                <option value="10" selected>
+                  10 Items per page
+                </option>
                 <option value="20">20 Items per page</option>
                 <option value="30">30 Items per page</option>
                 <option value="40">40 Items per page</option>
               </select>
+            </div>
+            <div className="flex">
+              <div className="w-40">
+                <select className="form-select">
+                  <option value="1" selected>
+                    Page 1 of 5
+                  </option>
+                  <option value="2">Page 2 of 5</option>
+                  <option value="3">Page 3 of 5</option>
+                  <option value="4">Page 4 of 5</option>
+                  <option value="5">Page 5 of 5</option>
+                </select>
+              </div>
+              <button className="border border-neutral-500 hover:border-neutral-500 hover:bg-black text-sm text-neutral-800 hover:text-white ml-4 px-3 rounded shadow transition duration-200 focus-visible:ring-2 focus-visible:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+                </svg>
+              </button>
+              <button className="border border-neutral-500 hover:border-neutral-500 hover:bg-black text-sm text-neutral-800 hover:text-white ml-4 px-3 rounded shadow transition duration-200 focus-visible:ring-2 focus-visible:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
             </div>
           </div>
         </div>

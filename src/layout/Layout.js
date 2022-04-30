@@ -8,7 +8,7 @@ const Layout = () => {
     <main className="bg-neutral-200 min-h-screen">
       <Navbar />
       <Sidebar />
-      <div className="md:ml-24 lg:ml-60">
+      <div className="md:ml-24 lg:ml-60 mt-16 mb-16 md:mb-0">
         <MainRoutes />
       </div>
     </main>

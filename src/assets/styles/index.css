@@ -6,4 +6,8 @@
   .form-check {
     @apply checked:bg-check appearance-none h-4 w-4 border-2 border-neutral-300 rounded bg-transparent checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 align-top bg-no-repeat bg-center bg-contain cursor-pointer;
   }
+
+  .form-select {
+    @apply bg-select bg-white appearance-none border border-neutral-500 text-sm text-neutral-800 p-2 rounded shadow w-full block bg-clip-padding bg-no-repeat bg-right focus-visible:ring-2 focus-visible:outline-none;
+  }
 }

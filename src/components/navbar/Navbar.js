@@ -7,7 +7,7 @@ import user from "assets/images/navbar/user.png";
 
 const Navbar = () => {
   return (
-    <nav className="h-16 py-3 px-6 flex justify-between bg-white border-b border-neutral-400">
+    <nav className="fixed top-0 w-full h-16 z-10 py-3 px-6 flex justify-between bg-white border-b border-neutral-400">
       <div className="flex items-center">
         <Menu as="div" className="relative inline-block text-left">
           <Menu.Button className="inline-flex justify-center w-full p-2 text-sm focus:ring-2 focus:rounded font-medium">

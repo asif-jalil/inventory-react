@@ -6,7 +6,7 @@ import settings from "assets/images/sidebar/icon4.svg";
 
 const Sidebar = () => {
   return (
-    <div className="fixed bottom-0 md:bottom-[unset] md:left-0 w-full md:w-24 lg:w-60 border-r border-neutral-400 md:h-full p-4 md:p-6 bg-white md:bg-transparent">
+    <div className="fixed bottom-0 md:bottom-[unset] md:left-0 md:top-0 w-full md:w-24 lg:w-60 border-r border-neutral-400 h-16 md:h-full md:mt-16 p-4 md:p-6 bg-white md:bg-transparent">
       <ul className="flex justify-between items-center md:block">
         <li className="md:mb-2 rounded hover:bg-neutral-400">
           <a href="#!" className="text-neutral-700 text-sm font-medium flex items-center justify-center lg:justify-start p-2 md:py-2.5 md:px-3">
